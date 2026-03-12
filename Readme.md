@@ -7,6 +7,7 @@ This project integrates Microsoft Azure cloud services, Apache Spark, and Genera
 ## 📖 Project Overview
 
 This system collects stock market data and processes it through a multi-layer cloud data architecture. Using Generative AI, the system converts numerical indicators into human-readable market signals, which are then visualized through an interactive Power BI dashboard for easier decision-making.
+![AI-Powered Stock Analytics System Architecture](Images/architecture.png)
 
 ## 📁 Project Structure
 
@@ -24,13 +25,13 @@ A standalone Python script for data collection.
 - API Integration: Fetches data via the Yahoo Finance API.
 - Cloud Storage: Automatically uploads raw CSV files to Azure Data Lake Storage (ADLS Gen2).
 
-### 📊 `CBDA.pbix`
+### 📊 `Dashboard.pbix`
 
 The Power BI dashboard file that connects to the Gold layer.
 
 - Provides interactive visualizations for price trends, volume, and AI-generated sentiment cards.
 
-### 📄 `CBDAS_projectReport.pdf`
+### 📄 `ProjectReport.pdf`
 
 The complete technical documentation covering methodology, hardware/software requirements, and final implementation results.
 
@@ -56,6 +57,8 @@ The pipeline ensures data quality and traceability through three distinct layers
 - Silver (Cleaned): Standardized data with validated schemas and removed nulls.
 - Gold (Analytics): Curated tables with computed SMA50, SMA200, and AI insights.
 
+![AI-Powered Stock Analytics System Architecture](Images/Medallion%20Architecture.png)
+
 ### 2. 🤖 AI-Driven Market Sentiment
 
 The system integrates the Gemini 2.5 Flash API to transform traditional technical analysis into AI-assisted financial guidance.
@@ -65,9 +68,14 @@ It interprets SMA crossovers to flag:
 - Bullish signals for potential upward trends.
 - Bearish signals for potential downward trends.
 
+![AI-Powered Stock Analytics System Architecture](Images/AI_Suggestion.png)
+
+
 ### 3. 📊 Interactive Data Visualization
 
 The Power BI dashboard allows users to filter by tickers like NVDA, AAPL, and MSFT, observe crossover events, and view automated portfolio recommendations.
+
+![AI-Powered Stock Analytics System Architecture](Images/Dashboard.png)
 
 ## ⚙️ Running the Project
 
