@@ -7,7 +7,7 @@ This project integrates Microsoft Azure cloud services, Apache Spark, and Genera
 ## 📖 Project Overview
 
 This system collects stock market data and processes it through a multi-layer cloud data architecture. Using Generative AI, the system converts numerical indicators into human-readable market signals, which are then visualized through an interactive Power BI dashboard for easier decision-making.
-![AI-Powered Stock Analytics System Architecture](Images/architecture.png)
+![AI-Powered Stock Analytics System Architecture](Images/Architecture.png)
 
 ## 📁 Project Structure
 
